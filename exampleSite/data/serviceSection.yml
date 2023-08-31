@@ -1,45 +1,27 @@
 ---
 enable: true
-topTitle: Working Area
+topTitle: Our Expertize
 title: >
-  ## Creative Services
+  ## Research Services
 
-  Enjoy team diversity and increase their networks among others people in
-  various fields by provided.
+  Work with us to fine tune your mmWave network performance
 service:
   - content: >
-      #### UI/UX Design 
+      #### Beam Management 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/ui-ux.svg
+      Configure optimal beam handling capability to ensure coverage and avoid network outage
   - content: >
-      #### Web Development 
+      #### mmWave Node Deployment 
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/web.svg
+      Let us help you deploy mmWave network to maximize user experience
   - content: >
-      #### Creative Design 
+      #### Hardware modifications
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/creative.svg
+      Let us audit your hardware device to reduce power consumption 
+    
   - content: >
-      #### Branding
+      #### Software updates
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/branding.svg
-  - content: >
-      #### UI/UX Design
+      A quick software update can fix your network, lets work together
 
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/ui-ux.svg
-  - content: >
-      #### Web Development
-
-      Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat.
-    image: images/service/web.svg
+  
