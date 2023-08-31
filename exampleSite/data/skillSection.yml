@@ -1,17 +1,17 @@
 ---
 enable: true
-topTitle: My Skills
+topTitle: Our Research
 content: >
-  ## Why hire me for your next project?
+  ## Avoid costly deployment mistakes 
 
-  My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
+  Our protocols ensure mmWave terminals stay connected during mobility and transient blockages
 
 image: images/skill/skill_image.jpg
 
 skill:
-  - title: HTML
-    percent: 69
-  - title: CSS
-    percent: 60
-  - title: Javascript
+  - title: Pedestrian mobility handling
+    percent: 99
+  - title: Outdoor Blockage recovery
+    percent: 80
+  - title: Indoor Blockage recovery
     percent: 85
