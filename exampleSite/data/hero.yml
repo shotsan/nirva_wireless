@@ -1,13 +1,13 @@
 ---
 enable: true
-topTitle: Hello, I am Natasha
+topTitle: Nirva Wireless
 content: >
-  # I am here for your personal business
+  # Let our research power your mmWave networks to deliver lightning speeds with 99.99999% uptime
 
-  Enjoy team diversity and increase their networks among others people
-  in various fields by
+  Our IP handles narrow directional beams of mmWave nodes in both indoors and outdoors and truly optimized 
+  to always stay connected with the user terminal
 buttonName: Contact me
 buttonURL: contact
 image: images/hero/2960351.jpg
 videoThumb: images/hero/popup-thumb.png
-videoURL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[//]: # videoURL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
