@@ -23,7 +23,7 @@ weight = 4
 [[menu.main]]
 name = "Contact"
 url = "#contact"
-weight = 8
+weight = 5
 
 # Sitemap Menu
 [[menu.sitemap]]
