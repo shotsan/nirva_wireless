@@ -1,10 +1,10 @@
 ---
 enable: true
-topTitle: Nirva Wireless
+topTitle: 
 content: >
-  # Improve your mmWave connectivity and deliver lightning wireless speeds
+  # Improve your mmWave network connectivity and deliver lightning wireless speeds
 
-  Our IP handles narrow directional beams of mmWave nodes in both indoors and outdoors and truly optimized 
-  to always stay connected with the user terminal
+  Our IP handles narrow directional beams of mmWave nodes in both indoors and outdoors. Enjoy a truly optimized network,  
+  mmWave network finally delivers its disruptive potential
 buttonName: Contact Us
 buttonURL: contact
