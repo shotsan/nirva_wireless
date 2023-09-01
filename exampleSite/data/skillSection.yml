@@ -1,17 +1,18 @@
 ---
 enable: true
-topTitle: Our Research
+topTitle: 
 content: >
   ## Avoid costly deployment mistakes 
 
-  Our protocols ensure mmWave terminals stay connected during mobility and transient blockages
+  Our research enables mmWave terminals stay connected! 
+  Connection time during pedestrian mobility and transient blockages
 
 image: images/skill/skill_image.jpg
 
 skill:
   - title: Pedestrian mobility handling
     percent: 99
-  - title: Outdoor Blockage recovery
+  - title: Outdoor Pedestrian Blockages
     percent: 80
-  - title: Indoor Blockage recovery
+  - title: Indoor Pedestrian Blockages
     percent: 85
