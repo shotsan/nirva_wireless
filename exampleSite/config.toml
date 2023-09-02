@@ -49,21 +49,17 @@ contactLink = "contact"
 copyright = "All right reserved copyright © Nirva Wireless 2023"
 footerLogo = "images/contact/widget-logo.png"
 # We're using formspree.io for form handling, paste your formspree url below
-fabformURL  = "https://fabform.io/f/JpTXRUa"
+
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
 [params.address]
-address = "23 Khan Niketon, Grand Street, NYK."
-email = "hello@example.com"
+address = "3128 TAMU"
+email = "nirvawireless@gmail.com"
 openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-phone = "+(448) 833 5272 332"
 
-[params.map]
-APIkey = "YOUR GOOGLE MAP API"
-latitude = "23.7783741"
-longitude = "90.3746808"
-pinImage = "images/pin.png"
+
+ 
 
 # Social icons
 
