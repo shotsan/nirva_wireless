@@ -14,7 +14,7 @@ service:
       #### mmWave Node Deployment 
 
       Let us help you deploy mmWave network to maximize user experience
-      image: images/service/network.svg
+    image: images/service/network.svg
   - content: >
       #### Hardware modifications
 
