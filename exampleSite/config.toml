@@ -54,9 +54,9 @@ googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
 [params.address]
-address = "3128 TAMU, College Station, TX, USA"
+address = "3443 Tahoma Trl, College Station, TX 77845"
 email = "nirvawireless@gmail.com"
-openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
+
 
 
  
