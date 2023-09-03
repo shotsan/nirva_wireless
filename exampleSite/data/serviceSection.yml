@@ -23,7 +23,7 @@ service:
     image: images/service/bat.png
   - content: >
       #### Software updates
-
+      
       A quick software update fixes mmWave network. Lets work together to make it happen
     image: images/service/5g.png
   
