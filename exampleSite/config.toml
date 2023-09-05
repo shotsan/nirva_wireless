@@ -50,12 +50,12 @@ copyright = "All right reserved copyright © Nirva Wireless 2023"
 footerLogo = "images/contact/widget-logo.png"
 # We're using formspree.io for form handling, paste your formspree url below
 
-googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+googleAnalytics = "G-PCYF8BVR5H"
 logo = "images/site-navigation/logo.png"
 
 [params.address]
 address = "3443 Tahoma Trl, College Station, TX 77845"
-email = "nirvawireless@gmail.com"
+email = "contact@nirvawireless.com"
 
 
 
@@ -67,8 +67,3 @@ email = "nirvawireless@gmail.com"
 icon = "fa-linkedin-square"
 url = "https://www.linkedin.com/"
 weight = 1
-
-[[params.social]]
-icon = "fa-twitter-square"
-url = "https://twitter.com/"
-weight = 2
