@@ -13,17 +13,15 @@ name = "About Us"
 url = "#about"
 weight = 2
 [[menu.main]]
-name = "Service"
+name = "Expertize"
 url = "#service"
 weight = 3
 [[menu.main]]
-name = "Research"
-url = "#skills"
-weight = 4
+
 [[menu.main]]
 name = "Contact"
 url = "#contact"
-weight = 5
+weight = 4
 
 # Sitemap Menu
 [[menu.sitemap]]
