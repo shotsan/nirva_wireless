@@ -2,9 +2,10 @@
 enable: true
 topTitle: 
 content: >
-  #  Overcoming the challenges, we've unleashed lightning-fast wireless speeds and achieved 100% connectivity in mmWave Networks
-
-  Experience the Power of mmWave: Precision Beam Alignment in Indoors & Outdoors! Unleash mmWave's Disruptive Potential
+  #  We address the tough challenges a mmWave network must overcome to maintain user connectivity: Network must point narrow directional beams towards user both during mobility and blockage.
+  Having mastered Precision Beam Alignment in both Indoors & Outdoors with our research! 
+  
+  Its time to Unleash mmWave spectrum's Disruptive Potential!
 buttonName: Contact Us
 buttonURL: contact
 image: images/hero/about-img1.jpg
