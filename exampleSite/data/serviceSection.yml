@@ -1,6 +1,6 @@
 ---
 enable: true
-topTitle: Our Expertize
+topTitle: 
 title: >
   
 
@@ -12,7 +12,7 @@ service:
       Configure optimal beam handling capability to ensure coverage and avoid network outage
     image: images/service/bm.png
   - content: >
-      #### mmWave Node Deployment 
+      #### Network Deployment 
 
       Let us help you deploy mmWave network to maximize user experience
     image: images/service/network2.png
