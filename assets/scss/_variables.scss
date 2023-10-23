@@ -24,10 +24,12 @@ $font-size-base: 1.125rem; // 18px
 
 h1 {
   font-size: 40px;
-  background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(309deg, #42d392, #647eff)
 }
+
+ 
 
 $h2-font-size: 50px;
 $h3-font-size: 30px;
