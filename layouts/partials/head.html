@@ -17,7 +17,7 @@
 
   {{ "<!-- Stylesheets -->" | safeHTML }}
   {{ $style := resources.Get "scss/style.scss" | css.Sass | minify }}
-  <link href="{{ $style.Permalink }}" rel="stylesheet" />
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
