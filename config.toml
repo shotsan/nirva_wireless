@@ -1,0 +1,50 @@
+baseURL = "www.nirvawireless.com"
+languageCode = "en-us"
+ignoreLogs = ['warning-goldmark-raw-html']
+[pagination]
+pagerSize = 6
+
+title = "Nirva Wireless | AI-Powered Wireless Chip R&D"
+
+# Main Menu
+[[menu.main]]
+name = "Home"
+url = "#home"
+weight = 1
+[[menu.main]]
+name = "Platform"
+url = "#about"
+weight = 2
+[[menu.main]]
+name = "How It Works"
+url = "#service"
+weight = 3
+[[menu.main]]
+name = "Contact"
+url = "#contact"
+weight = 4
+
+# Sitemap Menu
+[[menu.sitemap]]
+name = "Contact Us"
+url = "contact"
+weight = 1
+
+[params]
+blogPageURL = "blog"
+contactLink = "contact"
+copyright = "© 2024 Nirva Wireless. Accelerating wireless innovation with AI."
+footerLogo = "images/contact/widget-logo.png"
+
+googleAnalytics = "G-PCYF8BVR5H"
+logo = "images/site-navigation/logo.png"
+
+[params.address]
+address = "3443 Tahoma Trl, College Station, TX 77845"
+email = "contact@nirvawireless.com"
+
+# Social icons
+[[params.social]]
+icon = "fa-linkedin-square"
+url = "https://www.linkedin.com/company/nirva-wireless/"
+weight = 1

@@ -1,0 +1,10 @@
+---
+enable: true
+topTitle: "THE PLATFORM"
+title: >
+  Intelligence at Scale
+content: >
+  Parse vast technical archives. Build unified knowledge graphs. Deploy autonomous code agents.
+button1Name: Get Started
+button1Target: contact
+image: images/service/search.png

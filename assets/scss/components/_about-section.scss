@@ -1,73 +1,56 @@
 .about {
-  overflow: hidden;
-  &_content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    &-thumb {
-      width: 45%;
-      position: relative;
-      @include desktop {
-        width: 100%;
-      }
-      .about-svg {
-        position: absolute;
-        top: -11%;
-        left: -17%;
-        z-index: -1;
-        height: 150px;
-        animation: move_top 4s infinite;
-        @include tablet {
-          top: -7%;
-          left: -16%;
-        }
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .about_content-thumb-image {
-        img {
-          height: 100%;
-          width: 100%;
-          &.about_mask_svg {
-            mask: url(../images/about/about-mask-svg.svg);
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: contain;
-            -webkit-mask-position: center center;
-          }
-        }
-      }
+  padding: clamp(80px, 10vw, 120px) 0;
+  background: #ffffff;
+
+  .section-title {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+    .top-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0066FF;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 24px;
+      display: block;
     }
-    &-inner {
-      width: 55%;
-      padding: 60px 50px;
-      background: #1b2031;
-      border-radius: 20px;
-      margin-left: -60px;
-      position: relative;
-      @include desktop {
-        padding: 25px;
-      }
-      @include desktop {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 30px;
-      }
-      &-blob {
-        position: absolute;
-        top: -55%;
-        right: -22%;
-        z-index: -1;
-        width: 400.369px;
-        height: 362.909px;
-        svg {
-          width: 140%;
-        }
-        @include tablet {
-          display: none;
-        }
+
+    h2 {
+      font-size: clamp(56px, 8vw, 96px);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin-bottom: 40px;
+      color: #000000 !important;
+    }
+
+    p {
+      font-size: clamp(28px, 4vw, 40px);
+      color: #1d1d1f;
+      line-height: 1.4;
+      margin-bottom: 56px;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      padding: 18px 48px;
+      font-size: 17px;
+      border-radius: 980px;
+      background: #0066FF;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #0051CC;
+        transform: scale(1.02);
       }
     }
   }

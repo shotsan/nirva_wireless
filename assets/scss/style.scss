@@ -1,8 +1,8 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	Portio HTML
-VERSION:	1.0.0
+PROJECT:	Nirva Wireless
+VERSION:	2.0.0
 -------------------------------------------------------------------*/
 @import "variables";
 
@@ -16,6 +16,10 @@ VERSION:	1.0.0
 
 @import "common";
 
+@import "responsive";
+
+@import "components/sections";
+
 @import "components/preloder";
 
 @import "components/navbar";
@@ -26,24 +30,6 @@ VERSION:	1.0.0
 
 @import "components/service-section";
 
-@import "components/portfolio-section";
-
-@import "components/resume-section";
-
-@import "components/skill-section";
-
-@import "components/testimonial-section";
-
-@import "components/blog-section";
-
 @import "components/footer-section";
 
-@import "components/blog";
-
-@import "components/single-blog-post";
-
-@import "components/page-title";
-
 @import "components/contact";
-
-@import "components/case_details";

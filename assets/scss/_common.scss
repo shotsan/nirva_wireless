@@ -1,5 +1,12 @@
-.section{
-  padding: 100px 0;
+.section {
+  padding: clamp(80px, 12vw, 160px) 0;
+}
+
+.section-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 .unstyle-list {
@@ -8,3 +15,62 @@
   margin-right: 0;
 }
 
+// Premium buttons
+.btn {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border-radius: 980px;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: -0.01em;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+  
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.btn-primary {
+  background: #0066FF;
+  color: white;
+  
+  &:hover {
+    background: #0051CC;
+    box-shadow: 0 8px 24px rgba(0, 102, 255, 0.3);
+  }
+}
+
+.btn-lg {
+  font-size: 19px;
+  padding: 20px 40px;
+}
+
+// Smooth scroll
+html {
+  scroll-behavior: smooth;
+}
+
+// Container max-width
+.container {
+  max-width: 1200px;
+}
+
+// Fade in animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

@@ -1,0 +1,19 @@
+{{ with .Site.Data.statsSection }}
+{{ if .enable }}
+<section class="stats-section">
+  <div class="container">
+    <div class="row">
+      {{ range .stats }}
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="stat-item">
+          <div class="stat-number">{{ .number }}</div>
+          <div class="stat-title">{{ .title }}</div>
+          <div class="stat-description">{{ .description }}</div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

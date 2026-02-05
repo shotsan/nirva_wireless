@@ -1,0 +1,18 @@
+---
+enable: false
+topTitle: 
+content: >
+  ## Avoid costly deployment mistakes 
+
+  Our research enables mmWave terminals stay connected! 
+  Connection time during pedestrian mobility and transient blockages
+
+image: images/skill/skill_image.jpg
+
+skill:
+  - title: Pedestrian mobility handling
+    percent: 99
+  - title: Outdoor Pedestrian Blockages
+    percent: 80
+  - title: Indoor Pedestrian Blockages
+    percent: 85

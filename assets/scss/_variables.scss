@@ -1,46 +1,76 @@
 //
-// Colors
+// Premium Brand Design System
 //
 
-// General
-$primary: #5d78ff;
-$secondary: #282f49;
-// Text
-$headings-color: #282f49;
-$body-color: #282f49;
+$body-bg: #ffffff;
+$card-bg: #ffffff;
+$primary: #0066FF;
+$dark: #000000;
+$light: #ffffff;
+$gray-100: #F5F5F7;
+$gray-600: #86868B;
+
+$body-color: #1d1d1f;
+$headings-color: #000000;
+$link-color: #0066FF;
+$link-hover-color: #0051CC;
+
+$component-active-bg: $primary;
+$card-border-color: rgba(0,0,0,0.08);
 
 //
-// Typography
+// Typography - Premium
 //
 
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
-$font-family: 'Open Sans', sans-serif;
-$headings-font-family: "Open Sans";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
 
-// Size
-$font-size-base: 1.125rem; // 18px
-//$h1-font-size: 40px;
+$font-size-base: 1.0625rem;
 
-h1 {
-  font-size: 40px;
- background: linear-gradient(309deg, #42d392, #647eff);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+h1, .h1 {
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: #000000 !important;
 }
 
- 
+h2, .h2 {
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 700;
+  color: #000000 !important;
+}
 
-$h2-font-size: 50px;
-$h3-font-size: 30px;
-$h4-font-size: 25px;
-$h5-font-size: 22px;
-$h6-font-size: 16px;
+h3, .h3 {
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 600;
+  color: #000000 !important;
+}
 
-// Spacing
+h4, .h4 {
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 600;
+  color: #000000 !important;
+}
+
 $headings-margin-bottom: 1.5rem;
-$line-height-base: 1.75;
+$line-height-base: 1.5;
+$headings-line-height: 1.1;
 
-// Misc
 $link-hover-decoration: none;
+$border-radius: 12px;
+$border-radius-lg: 24px;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.5,
+  2: $spacer,
+  3: $spacer * 2,
+  4: $spacer * 3,
+  5: $spacer * 5,
+  6: $spacer * 8,
+  7: $spacer * 12
+);

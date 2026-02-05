@@ -1,0 +1,190 @@
+// Mobile-first responsive design
+
+// Hero responsive
+.hero {
+  padding: 100px 0 60px;
+
+  @media (max-width: 768px) {
+    padding: 80px 0 40px;
+    min-height: auto;
+
+    .hero_content {
+      h1 {
+        font-size: clamp(36px, 10vw, 56px);
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: clamp(16px, 4vw, 20px);
+        margin-bottom: 32px;
+      }
+
+      .btn-primary {
+        padding: 14px 32px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Stats responsive
+.stats-section {
+  padding: clamp(60px, 10vw, 120px) 0;
+
+  @media (max-width: 768px) {
+    .stat-item {
+      padding: 30px 15px;
+      margin-bottom: 20px;
+
+      .stat-number {
+        font-size: clamp(40px, 12vw, 72px);
+      }
+
+      .stat-title {
+        font-size: clamp(16px, 4vw, 20px);
+      }
+    }
+  }
+}
+
+// About & Service responsive
+.about, .service {
+  padding: clamp(60px, 12vw, 160px) 0;
+
+  @media (max-width: 768px) {
+    .section-title {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: clamp(32px, 8vw, 56px);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: clamp(16px, 4vw, 20px);
+      }
+    }
+  }
+}
+
+.service {
+  @media (max-width: 768px) {
+    .service-item {
+      padding: 40px 30px;
+      margin-bottom: 20px;
+
+      h4 {
+        font-size: clamp(20px, 5vw, 28px);
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Navbar responsive
+.navbar {
+  @media (max-width: 991px) {
+    padding: 15px 0;
+
+    .navbar-collapse {
+      background: rgba(255, 255, 255, 0.98);
+      padding: 20px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+      padding: 12px 0 !important;
+      text-align: center;
+    }
+
+    .btn-primary {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+}
+
+// Footer responsive
+.footer {
+  margin-top: 80px;
+
+  @media (max-width: 991px) {
+    margin-top: 60px;
+
+    .footer-cta {
+      padding: 60px 40px;
+      margin: -40px 20px 60px;
+      text-align: center;
+
+      h2 {
+        font-size: clamp(28px, 6vw, 40px);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      .btn-light {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    .footer-content {
+      padding: 60px 0 40px;
+
+      .col-lg-4, .col-lg-2, .col-lg-3 {
+        text-align: center;
+      }
+
+      .footer-social {
+        justify-content: center;
+        display: flex;
+      }
+    }
+
+    .footer-bottom {
+      text-align: center;
+
+      .col-md-6 {
+        text-align: center !important;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer-cta {
+      padding: 40px 30px;
+      margin: -30px 15px 40px;
+    }
+  }
+}
+
+// Container responsive
+.container {
+  @media (max-width: 576px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+// Typography responsive
+h1, h2, h3, h4, h5, h6 {
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+p {
+  @media (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}

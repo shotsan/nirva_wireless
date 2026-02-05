@@ -1,0 +1,21 @@
+---
+enable: true
+topTitle: "HOW IT WORKS"
+title: >
+  Three Pillars of Autonomous R&D
+service:
+  - content: >
+      #### Document Ingestion
+      
+      Parse extensive technical libraries—patents, IEEE papers, 3GPP specs. Extract structured knowledge at scale.
+    image: images/service/parsing.png
+  - content: >
+      #### Semantic Intelligence
+      
+      Build graph-based models that understand relationships between protocols and algorithms. Query vast datasets instantly.
+    image: images/service/search.png
+  - content: >
+      #### Autonomous Agents
+      
+      Deploy AI agents that research, design, and implement wireless features. From PHY to MAC—automated R&D.
+    image: images/service/agent.png

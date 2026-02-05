@@ -1,0 +1,15 @@
+---
+enable: true
+stats:
+  - number: "100K+"
+    title: "Documents Parsed"
+    description: "Patents, papers, and technical specs processed"
+  - number: "1M+"
+    title: "Code Generations"
+    description: "Autonomous implementations deployed"
+  - number: "10x"
+    title: "Faster R&D"
+    description: "From concept to prototype"
+  - number: "24/7"
+    title: "AI Agents"
+    description: "Continuous research and development"
