@@ -1,16 +1,17 @@
 .footer {
-  background: #000000;
+  background: linear-gradient(135deg, #0A0E27 0%, #1a1f3a 100%);
   color: #ffffff;
   padding: 0;
   margin-top: 120px;
 
   .footer-cta {
-    background: linear-gradient(135deg, #0066FF 0%, #0051CC 100%);
+    background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
     padding: 80px 60px;
     border-radius: 24px;
     margin: -60px 0 80px;
     position: relative;
     z-index: 1;
+    box-shadow: 0 20px 60px rgba(0, 102, 255, 0.4);
 
     h2 {
       font-size: clamp(32px, 5vw, 48px);
@@ -89,18 +90,21 @@
       a {
         display: inline-block;
         padding: 12px 24px;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(0, 212, 255, 0.15);
         border-radius: 8px;
-        color: #ffffff;
+        color: #00D4FF;
         font-size: 16px;
         font-weight: 600;
         margin-right: 12px;
         transition: all 0.3s ease;
         text-decoration: none;
+        border: 1px solid rgba(0, 212, 255, 0.3);
 
         &:hover {
-          background: #0066FF;
+          background: #00D4FF;
+          color: #0A0E27;
           transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
         }
       }
     }

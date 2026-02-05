@@ -1,15 +1,16 @@
 .about {
   padding: clamp(80px, 10vw, 120px) 0;
-  background: #ffffff;
+  background: linear-gradient(135deg, #F0F4FF 0%, #E8F0FE 100%);
 
   .section-title {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
     padding: 48px 40px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
     border-radius: 24px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 102, 255, 0.12);
 
     .top-title {
       font-size: 14px;
