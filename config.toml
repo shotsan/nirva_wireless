@@ -1,4 +1,4 @@
-baseURL = "www.nirvawireless.com"
+baseURL = "/"
 languageCode = "en-us"
 ignoreLogs = ['warning-goldmark-raw-html']
 [pagination]

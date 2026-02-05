@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="{{ "plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
 
   {{ "<!-- Stylesheets -->" | safeHTML }}
-  {{ $style := resources.Get "scss/style.scss" | css.Sass | minify }}
+  {{ $options := dict "outputStyle" "compressed" }}
+  {{ $style := resources.Get "scss/style.scss" | css.Sass $options }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
   {{ "<!--Favicon-->" | safeHTML }}
