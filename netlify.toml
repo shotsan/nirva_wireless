@@ -4,3 +4,9 @@
 
 [build.environment]
   HUGO_VERSION = "0.154.5"
+
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
