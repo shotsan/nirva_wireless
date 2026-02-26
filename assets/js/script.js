@@ -443,3 +443,34 @@ function initialize() {
 if ($("#map").length > 0) {
   google.maps.event.addDomListener(window, "load", initialize);
 }
+
+// Animated Stats Counter
+$(document).ready(function() {
+  function animateCounter(element) {
+    const target = element.text();
+    const isNumber = /^\d+$/.test(target.replace(/[K+x]/g, ''));
+    
+    if (isNumber) {
+      const numericValue = parseInt(target.replace(/[K+x]/g, ''));
+      const suffix = target.match(/[K+x]/g) ? target.match(/[K+x]/g).join('') : '';
+      
+      $({countNum: 0}).animate({countNum: numericValue}, {
+        duration: 2000,
+        easing: 'swing',
+        step: function() {
+          element.text(Math.floor(this.countNum) + suffix);
+        },
+        complete: function() {
+          element.text(numericValue + suffix);
+        }
+      });
+    }
+  }
+  
+  $('.stats-section').waypoint(function() {
+    $('.stat-number').each(function() {
+      animateCounter($(this));
+    });
+    this.destroy();
+  }, { offset: '80%' });
+});

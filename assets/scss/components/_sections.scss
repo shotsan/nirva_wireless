@@ -139,7 +139,7 @@
     }
     
     p {
-      font-size: 17px;
+      font-size: clamp(17px, 2vw, 19px);
       line-height: 1.6;
       color: #1d1d1f;
     }
