@@ -1,92 +1,7 @@
 // Mobile-first responsive design
 
-// Hero responsive
-.hero {
-  padding: 100px 0 60px;
-
-  @media (max-width: 768px) {
-    padding: 80px 0 40px;
-    min-height: auto;
-
-    .hero_content {
-      h1 {
-        font-size: clamp(36px, 10vw, 56px);
-        margin-bottom: 24px;
-      }
-
-      p {
-        font-size: clamp(16px, 4vw, 20px);
-        margin-bottom: 32px;
-      }
-
-      .btn-primary {
-        padding: 14px 32px;
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-// Stats responsive
-.stats-section {
-  padding: clamp(60px, 10vw, 120px) 0;
-
-  @media (max-width: 768px) {
-    .stat-item {
-      padding: 30px 15px;
-      margin-bottom: 20px;
-
-      .stat-number {
-        font-size: clamp(40px, 12vw, 72px);
-      }
-
-      .stat-title {
-        font-size: clamp(16px, 4vw, 20px);
-      }
-    }
-  }
-}
-
-// About & Service responsive
-.about, .service {
-  padding: clamp(60px, 12vw, 160px) 0;
-
-  @media (max-width: 768px) {
-    .section-title {
-      margin-bottom: 40px;
-
-      h2 {
-        font-size: clamp(32px, 8vw, 56px);
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: clamp(16px, 4vw, 20px);
-      }
-    }
-  }
-}
-
-.service {
-  @media (max-width: 768px) {
-    .service-item {
-      padding: 40px 30px;
-      margin-bottom: 20px;
-
-      h4 {
-        font-size: clamp(20px, 5vw, 28px);
-      }
-
-      p {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-// Navbar responsive
-.navbar {
-  @media (max-width: 991px) {
+@media (max-width: 991px) {
+  .navbar {
     padding: 15px 0;
 
     .navbar-collapse {
@@ -107,13 +22,8 @@
       margin-top: 15px;
     }
   }
-}
 
-// Footer responsive
-.footer {
-  margin-top: 80px;
-
-  @media (max-width: 991px) {
+  .footer {
     margin-top: 60px;
 
     .footer-cta {
@@ -159,32 +69,97 @@
       }
     }
   }
+}
 
-  @media (max-width: 576px) {
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0 40px;
+    min-height: auto;
+
+    .hero_content {
+      h1 {
+        font-size: clamp(36px, 10vw, 56px);
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: clamp(16px, 4vw, 20px);
+        margin-bottom: 32px;
+      }
+
+      .btn-primary {
+        padding: 14px 32px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .stats-section {
+    .stat-item {
+      padding: 30px 15px;
+      margin-bottom: 20px;
+
+      .stat-number {
+        font-size: clamp(40px, 12vw, 72px);
+      }
+
+      .stat-title {
+        font-size: clamp(16px, 4vw, 20px);
+      }
+    }
+  }
+
+  .about, .service {
+    .section-title {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: clamp(32px, 8vw, 56px);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: clamp(16px, 4vw, 20px);
+      }
+    }
+  }
+
+  .service {
+    .service-item {
+      padding: 40px 30px;
+      margin-bottom: 20px;
+
+      h4 {
+        font-size: clamp(20px, 5vw, 28px);
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    margin-top: 40px;
+
     .footer-cta {
       padding: 40px 30px;
       margin: -30px 15px 40px;
     }
   }
-}
 
-// Container responsive
-.container {
-  @media (max-width: 576px) {
+  .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-}
-
-// Typography responsive
-h1, h2, h3, h4, h5, h6 {
-  @media (max-width: 768px) {
-    margin-bottom: 1rem;
-  }
-}
-
-p {
-  @media (max-width: 768px) {
-    margin-bottom: 1rem;
   }
 }
