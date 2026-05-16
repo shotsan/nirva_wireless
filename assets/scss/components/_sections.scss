@@ -71,34 +71,6 @@
   }
 }
 
-// About Section
-.about {
-  padding: clamp(100px, 15vw, 200px) 0;
-  background: #ffffff;
-  
-  .section-title {
-    margin-bottom: 80px;
-    
-    h2 {
-      font-size: clamp(40px, 6vw, 80px);
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      line-height: 1.05;
-      margin-bottom: 32px;
-      color: #000000 !important;
-    }
-    
-    p {
-      font-size: clamp(19px, 2.5vw, 24px);
-      color: #1d1d1f;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
-    }
-  }
-}
-
 // Service Section
 .service {
   padding: clamp(100px, 15vw, 200px) 0;
