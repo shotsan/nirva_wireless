@@ -1,11 +1,11 @@
 ---
 enable: true
 stats:
-  - number: "100K+"
-    title: "Documents Parsed"
+  - number: "380K+"
+    title: "Pages Parsed"
     description: "Patents, papers, and technical specs processed"
-  - number: "1M+"
-    title: "Code Generations"
+  - number: "750K+"
+    title: "LoC Generated"
     description: "Autonomous implementations deployed"
   - number: "10x"
     title: "Faster R&D"

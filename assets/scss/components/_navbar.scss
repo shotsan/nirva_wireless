@@ -14,14 +14,22 @@
     img {
       height: 50px;
       width: auto;
-      filter: brightness(0) saturate(100%) invert(38%) sepia(96%) saturate(2945%) hue-rotate(210deg) brightness(101%) contrast(106%);
+      filter: drop-shadow(0 0 20px rgba(0, 102, 255, 0.4)) 
+              drop-shadow(0 0 40px rgba(168, 85, 247, 0.2));
+      transition: all 0.3s ease;
+
+      &:hover {
+        filter: drop-shadow(0 0 30px rgba(0, 102, 255, 0.6)) 
+                drop-shadow(0 0 60px rgba(168, 85, 247, 0.4));
+        transform: scale(1.05);
+      }
     }
   }
 
   .nav-link {
     color: #1d1d1f !important;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     padding: 8px 20px !important;
     transition: color 0.2s ease;
 
