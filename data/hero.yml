@@ -2,9 +2,9 @@
 enable: true
 topTitle: "AI-POWERED WIRELESS INNOVATION"
 content: >
-  # Wireless R&D in Days, Not Months
+  # Wireless R&D in Days, Not Months.
   
-  AI agents that research, design, and code autonomously. Intelligent engineering at breakthrough speed.
+  Our platform ingests massive datasets, builds intelligent semantic models, and deploys autonomous code agents to accelerate wireless chip R&D from months to days.
 buttonName: See How It Works
 buttonURL: "#about"
 image: images/hero/hero-code.png

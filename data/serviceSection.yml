@@ -2,7 +2,7 @@
 enable: true
 topTitle: "HOW IT WORKS"
 title: >
-  Three Pillars of Autonomous R&D
+  ## Three Pillars of Autonomous R&D
 service:
   - content: >
       #### Document Ingestion
@@ -12,7 +12,7 @@ service:
   - content: >
       #### Semantic Intelligence
       
-      Build graph-based models that understand relationships between protocols and algorithms. Query vast datasets instantly.
+      Build models that understand relationships between protocols and algorithms. Query vast datasets instantly.
     image: images/service/search.png
   - content: >
       #### Autonomous Agents
