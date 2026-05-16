@@ -13,7 +13,7 @@
     box-shadow: 0 8px 32px rgba(0, 102, 255, 0.12);
 
     .top-title {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 700;
       color: #0066FF;
       text-transform: uppercase;
@@ -23,11 +23,11 @@
     }
 
     h2 {
-      font-size: clamp(40px, 6vw, 72px);
+      font-size: clamp(48px, 7vw, 80px);
       font-weight: 700;
       letter-spacing: -0.04em;
       line-height: 1.05;
-      margin-bottom: 40px;
+      margin-bottom: 24px;
       color: #000000 !important;
     }
 
@@ -37,6 +37,11 @@
       line-height: 1.4;
       margin-bottom: 56px;
       font-weight: 500;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0, 102, 255, 0.12);
+      padding: 24px 32px;
     }
 
     .btn-primary {
