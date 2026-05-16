@@ -7,6 +7,7 @@
   .stat-item {
     text-align: center;
     padding: 40px 20px;
+    overflow: visible;
     
     .stat-number {
       font-size: clamp(56px, 8vw, 96px);
@@ -15,10 +16,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      line-height: 1;
+      line-height: 1.2;
       margin-bottom: 16px;
-      letter-spacing: -0.02em;
-      padding-right: 8px;
+      letter-spacing: normal;
+      display: block;
+      width: 100%;
     }
     
     .stat-title {
