@@ -29,32 +29,6 @@ $headings-font-family: $font-family-sans-serif;
 
 $font-size-base: 1.0625rem;
 
-h1, .h1 {
-  font-size: clamp(48px, 7vw, 96px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  color: #000000 !important;
-}
-
-h2, .h2 {
-  font-size: clamp(40px, 5vw, 72px);
-  font-weight: 700;
-  color: #000000 !important;
-}
-
-h3, .h3 {
-  font-size: clamp(32px, 4vw, 56px);
-  font-weight: 600;
-  color: #000000 !important;
-}
-
-h4, .h4 {
-  font-size: clamp(24px, 3vw, 40px);
-  font-weight: 600;
-  color: #000000 !important;
-}
-
 $headings-margin-bottom: 1.5rem;
 $line-height-base: 1.5;
 $headings-line-height: 1.1;
