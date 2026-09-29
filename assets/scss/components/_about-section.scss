@@ -1,12 +1,30 @@
 .about {
   padding: clamp(80px, 10vw, 120px) 0;
   background: linear-gradient(135deg, #F0F4FF 0%, #E8F0FE 100%);
+  position: relative;
+  overflow: hidden;
+
+  .wave-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 0;
+    display: block;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
   .section-title {
     text-align: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 48px 40px;
+    padding: 48px 60px;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     border-radius: 24px;
@@ -23,8 +41,8 @@
     }
 
     h2 {
-      font-size: clamp(22px, 2.5vw, 28px);
-      font-weight: 900 !important;
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 800 !important;
       letter-spacing: -0.04em;
       line-height: 1.05;
       margin-bottom: 24px;
@@ -32,16 +50,11 @@
     }
 
     p {
-      font-size: clamp(19px, 2.5vw, 21px);
-      color: #1d1d1f;
-      line-height: 1.4;
+      font-size: clamp(19px, 2.5vw, 24px);
+      color: #86868B;
+      line-height: 1.6;
       margin-bottom: 56px;
-      font-weight: 900 !important;
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(20px);
-      border-radius: 24px;
-      box-shadow: 0 8px 32px rgba(0, 102, 255, 0.12);
-      padding: 24px 32px;
+      font-weight: 400 !important;
     }
 
     .btn-primary {

@@ -2,20 +2,33 @@
   position: relative;
   overflow: hidden;
   background: #ffffff;
-  padding: clamp(80px, 10vw, 120px) 0;
+  padding: clamp(40px, 5vw, 60px) 0;
 
   .section-title {
     text-align: center;
     margin-bottom: 60px;
 
     .top-title {
-      font-size: 16px;
-      font-weight: 700;
-      color: #0066FF;
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 800;
+      color: #000000;
       text-transform: uppercase;
-      letter-spacing: 0.15em;
+      letter-spacing: -0.03em;
       margin-bottom: 24px;
       display: block;
+      overflow: hidden;
+
+      .word {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     }
 
     h2 {

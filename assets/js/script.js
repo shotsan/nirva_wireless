@@ -474,3 +474,33 @@ $(document).ready(function() {
     this.destroy();
   }, { offset: '80%' });
 });
+
+// Word Split Reveal Animation
+$(document).ready(function() {
+  $('.word-split').each(function() {
+    var words = $(this).text().trim().split(' ');
+    $(this).empty();
+    $.each(words, function(i, word) {
+      $('<span class="word">' + word + '&nbsp;</span>').appendTo($('.word-split'));
+    });
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        $(entry.target).find('.word').each(function(i) {
+          var $word = $(this);
+          setTimeout(function() {
+            $word.addClass('visible');
+          }, i * 150);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  $('.word-split').each(function() {
+    observer.observe(this);
+  });
+});
+

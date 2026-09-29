@@ -1,6 +1,7 @@
 {{ with .Site.Data.aboutSection }}
 {{ if .enable }}
 <section class="section about" id="about">
+  <canvas class="wave-canvas" id="waveCanvas"></canvas>
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
@@ -16,5 +17,65 @@
     </div>
   </div>
 </section>
+<script>
+(function() {
+  var canvas = document.getElementById('waveCanvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var width, height;
+  function resize() {
+    var section = canvas.parentElement;
+    width = canvas.width = section.offsetWidth;
+    height = canvas.height = section.offsetHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+  var waves = [
+    { freq: 0.012, amp: 25, speed: 0.015, phase: 0,  offset: 0.1, color: 'rgba(0, 102, 255, 0.35)' },
+    { freq: 0.008, amp: 25, speed: 0.010, phase: 2,  offset: 0.2, color: 'rgba(0, 212, 255, 0.30)' },
+    { freq: 0.018, amp: 25, speed: 0.020, phase: 4,  offset: 0.3, color: 'rgba(0, 102, 255, 0.25)' },
+    { freq: 0.006, amp: 25, speed: 0.008, phase: 1,  offset: 0.4, color: 'rgba(0, 212, 255, 0.20)' },
+    { freq: 0.014, amp: 25, speed: 0.012, phase: 3,  offset: 0.5, color: 'rgba(0, 102, 255, 0.30)' },
+    { freq: 0.020, amp: 25, speed: 0.018, phase: 5,  offset: 0.6, color: 'rgba(0, 212, 255, 0.25)' },
+    { freq: 0.010, amp: 25, speed: 0.014, phase: 6,  offset: 0.7, color: 'rgba(0, 102, 255, 0.20)' },
+    { freq: 0.016, amp: 25, speed: 0.016, phase: 7,  offset: 0.8, color: 'rgba(0, 212, 255, 0.28)' },
+    { freq: 0.022, amp: 25, speed: 0.022, phase: 8,  offset: 0.15, color: 'rgba(0, 102, 255, 0.32)' },
+    { freq: 0.004, amp: 25, speed: 0.006, phase: 9,  offset: 0.25, color: 'rgba(0, 212, 255, 0.18)' },
+    { freq: 0.024, amp: 25, speed: 0.024, phase: 10, offset: 0.65, color: 'rgba(0, 102, 255, 0.22)' },
+    { freq: 0.009, amp: 25, speed: 0.011, phase: 11, offset: 0.75, color: 'rgba(0, 212, 255, 0.26)' }
+  ];
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    waves.forEach(function(wave) {
+      wave.phase += wave.speed;
+
+      // Draw wave line
+      ctx.beginPath();
+      ctx.moveTo(0, height * wave.offset);
+      for (var x = 0; x <= width; x += 2) {
+        var y = height * wave.offset + Math.sin(x * wave.freq + wave.phase) * wave.amp;
+        ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = wave.color;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Draw light streak dot traveling along wave
+      var dotX = (Date.now() * wave.speed * 12) % width;
+      var dotY = height * wave.offset + Math.sin(dotX * wave.freq + wave.phase) * wave.amp;
+      var gradient = ctx.createRadialGradient(dotX, dotY, 0, dotX, dotY, 8);
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
+      gradient.addColorStop(0.4, 'rgba(180, 220, 255, 0.7)');
+      gradient.addColorStop(1, 'rgba(0, 102, 255, 0)');
+      ctx.beginPath();
+      ctx.arc(dotX, dotY, 8, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+</script>
 {{ end }}
 {{ end }}
