@@ -490,11 +490,13 @@ $(document).ready(function() {
       if (entry.isIntersecting) {
         $(entry.target).find('.word').each(function(i) {
           var $word = $(this);
+          $word.removeClass('visible');
           setTimeout(function() {
             $word.addClass('visible');
           }, i * 150);
         });
-        observer.unobserve(entry.target);
+      } else {
+        $(entry.target).find('.word').removeClass('visible');
       }
     });
   }, { threshold: 0.3 });
@@ -504,3 +506,21 @@ $(document).ready(function() {
   });
 });
 
+
+// Service Cards Scroll Animation
+$(document).ready(function() {
+  var cardObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        $(entry.target).addClass('visible');
+        cardObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: window.innerWidth < 768 ? 0.05 : 0.2 });
+
+  $('.service-item').each(function(i) {
+    var $card = $(this);
+    $card.css('transition-delay', (i * 0.2) + 's');
+    cardObserver.observe(this);
+  });
+});

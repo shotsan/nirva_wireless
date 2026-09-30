@@ -1,5 +1,5 @@
 .about {
-  padding: clamp(80px, 10vw, 120px) 0;
+  padding: clamp(30px, 8vw, 80px) 0;
   background: linear-gradient(135deg, #F0F4FF 0%, #E8F0FE 100%);
   position: relative;
   overflow: hidden;
@@ -10,7 +10,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.7;
     z-index: 0;
     display: block;
   }
@@ -24,7 +24,7 @@
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 48px 60px;
+    padding: 32px 60px;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     border-radius: 24px;
@@ -37,7 +37,7 @@
       text-transform: uppercase;
       letter-spacing: 0.15em;
       margin-bottom: 24px;
-      display: block;
+      display: none;
     }
 
     h2 {
@@ -50,10 +50,10 @@
     }
 
     p {
-      font-size: clamp(19px, 2.5vw, 24px);
-      color: #86868B;
-      line-height: 1.6;
-      margin-bottom: 56px;
+      font-size: clamp(28px, 3.5vw, 40px);
+      color: #000000;
+      line-height: 1.2;
+      margin-bottom: 24px;
       font-weight: 400 !important;
     }
 

@@ -1,6 +1,6 @@
 {{ with .Site.Data.aboutSection }}
 {{ if .enable }}
-<section class="section about" id="about">
+<section class="about" id="about">
   <canvas class="wave-canvas" id="waveCanvas"></canvas>
   <div class="container">
     <div class="row">
@@ -8,7 +8,7 @@
         <div class="section-title text-center">
           <span class="top-title">{{ .topTitle }}</span>
           {{ .title | markdownify }}
-          {{ .content | markdownify }}
+          <p>{{ .content }}</p>
           <div class="mt-5">
             <a class="btn btn-lg btn-primary" href="{{ .button1Target }}">{{ .button1Name }}</a>
           </div>
@@ -61,15 +61,22 @@
       ctx.stroke();
 
       // Draw light streak dot traveling along wave
-      var dotX = (Date.now() * wave.speed * 12) % width;
+      var dotX = (Date.now() * wave.speed * 4) % width;
       var dotY = height * wave.offset + Math.sin(dotX * wave.freq + wave.phase) * wave.amp;
-      var gradient = ctx.createRadialGradient(dotX, dotY, 0, dotX, dotY, 8);
+      var isMobile = width < 768;
+      var dotSize = isMobile ? 7 : 10;
+      var gradient = ctx.createRadialGradient(dotX, dotY, 0, dotX, dotY, dotSize);
       gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
-      gradient.addColorStop(0.4, 'rgba(180, 220, 255, 0.7)');
+      gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.9)');
+      gradient.addColorStop(0.5, 'rgba(150, 210, 255, 0.6)');
       gradient.addColorStop(1, 'rgba(0, 102, 255, 0)');
       ctx.beginPath();
-      ctx.arc(dotX, dotY, 8, 0, Math.PI * 2);
+      ctx.arc(dotX, dotY, dotSize, 0, Math.PI * 2);
       ctx.fillStyle = gradient;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(dotX, dotY, isMobile ? 1.5 : 3, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(255, 255, 255, 1)';
       ctx.fill();
     });
     requestAnimationFrame(draw);

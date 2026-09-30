@@ -16,8 +16,6 @@ VERSION:	2.0.0
 
 @import "common";
 
-@import "responsive";
-
 @import "components/sections";
 
 @import "components/preloder";
@@ -33,3 +31,5 @@ VERSION:	2.0.0
 @import "components/footer-section";
 
 @import "components/contact";
+
+@import "responsive";

@@ -73,18 +73,19 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 0 40px;
     min-height: auto;
+    padding: 100px 0 30px;
 
     .hero_content {
       h1 {
-        font-size: clamp(36px, 10vw, 56px);
-        margin-bottom: 24px;
+        font-size: clamp(32px, 9vw, 48px);
+        margin-bottom: 16px;
+        line-height: 1.1;
       }
 
       p {
-        font-size: clamp(16px, 4vw, 20px);
-        margin-bottom: 32px;
+        font-size: clamp(16px, 4vw, 18px);
+        margin-bottom: 24px;
       }
 
       .btn-primary {
@@ -109,17 +110,29 @@
     }
   }
 
+  .about .section-title {
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 16px 16px;
+  }
+
   .about, .service {
     .section-title {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      padding: 16px;
 
       h2 {
-        font-size: clamp(32px, 8vw, 56px);
-        margin-bottom: 20px;
+        font-size: clamp(28px, 8vw, 48px);
+        margin-bottom: 16px;
       }
 
       p {
-        font-size: clamp(16px, 4vw, 20px);
+        font-size: clamp(18px, 4vw, 24px);
+      }
+
+      .top-title {
+        font-size: clamp(32px, 8vw, 48px);
       }
     }
   }
